@@ -37,6 +37,7 @@ $(function install_retention_trends() {
                 min: 1000
             },
             tooltip: {
+                crosshairs: true,
                 headerFormat: '<b>{series.name}</b><br>',
                 pointFormat: '{point.x:%e. %b}: {point.y} '
             },

@@ -37,6 +37,7 @@ $(function retention_rate_trends() {
                 min: 0.4
             },
             tooltip: {
+                crosshairs: true,
                 headerFormat: '<b>{series.name}</b><br>',
                 pointFormat: '{point.x:%e. %b}: {point.y:.2f} '
             },
