@@ -43,11 +43,10 @@
     <script type="text/javascript" src="retention_rate_browsers.js"></script>
     <script type="text/javascript" src="retention_rate_worldmap.js"></script>
 
+    <script type="text/javascript" src="install_retention_trends.js"></script>
     <script type="text/javascript" src="retention_rate_trends.js"></script>
     <script type="text/javascript" src="retentions_dow.js"></script>
     <script type="text/javascript" src="retentions_dow_browsers.js"></script>
-
-    
 
 
     <link rel="stylesheet" href="style.css" type="text/css">
@@ -68,9 +67,9 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li><a href="#locations">Locations</a></li>
-                <li><a href="#browsers">Browsers</a></li>
                 <li><a href="#trends">Trends</a></li>
+                <li><a href="#browsers">Browsers</a></li>
+                <li><a href="#locations">Locations</a></li>
                 <li><a href="#metrics">Metrics</a></li>
               </ul>
               
@@ -91,17 +90,18 @@
         </nav>
     </section>
 
-    <div id="locations">
-        <h1>70% installs from US</h1>
-        <div id="installs_worldmap"></div>
-        <div id="installs_pie_country"></div>
+    <div id="trends">
+        <h1>60K new users per month <br><small style="color: #E8705B"><em>...and keeps growing w/ no plateau period</em></small></h1>
+        <div id="install_retention_trends"></div>
         <hr>
-        <h1>Japan has <em>highest</em> retention rate, US <em>lowest</em></h1>
-        <div id="retention_rate_worldmap"></div>
-
+        <h1>Retention Rate(RR) steadily improves over time <br><small style="color: #E8705B"><em> RR up 17% over 7-week period</em></small></h1>
+        <div id="retention_rate_trends"></div>
+        <hr>
+        <h1>Wednesdays are Champions!<br> <small style="color: #E8705B"><em>...and consistent across browsers</em></small></h1>
+        <div id="retentions_dow"></div>
+        <div id="retentions_dow_browsers"></div>
     </div>
-    <hr><div class="bottom_page"><p class="text-muted pull-right" style="font-size: 16px"><a href="#locations">Back to top</a></p></div>
-
+    <hr><div class="bottom_page"><p class="text-muted pull-right" style="font-size: 16px"><a href="#trends">Back to top</a></p></div>
 
     <div id="browsers">
         <h1>Half the installs on IE <br> <small style="color: #E8705B"><em>Not your typical gamers...?</em></small></h1>
@@ -114,15 +114,17 @@
     <hr><div class="bottom_page"><p class="text-muted pull-right" style="font-size: 16px"><a href="#browsers">Back to top</a></p></div>
     
 
-    <div id="trends">
-        <h1>Retention Rate(RR) steadily improves over time </h1>
-        <div id="retention_rate_trends"></div>
+    <div id="locations">
+        <h1>70% installs from US</h1>
+        <div id="installs_worldmap"></div>
+        <div id="installs_pie_country"></div>
         <hr>
-        <h1>Wednesdays are Champions!<br> <small style="color: #E8705B"><em>...and it is consistent across browsers</em></small></h1>
-        <div id="retentions_dow"></div>
-        <div id="retentions_dow_browsers"></div>
+        <h1>Japan has <em>highest</em> retention rate, US <em>lowest</em></h1>
+        <div id="retention_rate_worldmap"></div>
+
     </div>
-    <hr><div class="bottom_page"><p class="text-muted pull-right" style="font-size: 16px"><a href="#trends">Back to top</a></p></div>
+    <hr><div class="bottom_page"><p class="text-muted pull-right" style="font-size: 16px"><a href="#locations">Back to top</a></p></div>
+
 
     <div id="metrics">
         <h1>Tutorial completention and 1-day retention go hand in hand <br><small style="color: #E8705B"><em> 70% gamers are predictable this way</em></small></h1>

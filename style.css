@@ -47,7 +47,7 @@ h1 {
     margin: 0 auto;
     margin-bottom: 100px;
 }
-#retention_rate_trends, #retentions_dow, #retentions_dow_browsers {
+#retention_rate_trends, #retentions_dow, #retentions_dow_browsers, #install_retention_trends {
     display: block;
     margin: 0 auto;
     margin-bottom: 100px;
