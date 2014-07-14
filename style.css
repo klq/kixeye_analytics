@@ -1,0 +1,77 @@
+html, body {
+    margin: 0 auto;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#locations, #browsers, #metrics, #trends { 
+    padding-top: 70px; 
+}
+
+div {
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #AA3939;
+}
+
+
+.navbar .navbar-brand {
+    font-family: "Lobster"; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    color: #AA3939;
+}
+#locations, #browsers, #metrics, #trends {
+    display: block;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#installs_worldmap, #retention_rate_worldmap {
+    margin: 0px 100px; 
+    margin-bottom: 100px;
+}
+
+#installs_pie_country, #installs_pie { 
+    display: block;
+    margin-bottom: 100px;
+}
+
+#tut_vs_ret {
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+#retention_rate_trends, #retentions_dow, #retentions_dow_browsers {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+#tutorial_rate_browsers, #retention_rate_browsers {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.bottom_page {
+    display: block;
+    margin-bottom: 600px;
+}
+.highcharts-tooltip>span {
+    padding: 10px;
+    white-space: normal !important;
+    width: 200px;
+}
+
+.loading {
+    margin-top: 10em;
+    text-align: center;
+    color: gray;
+}
+
+

@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/highcharts-more.js"></script>
+
+
+    <script src="http://code.highcharts.com/maps/modules/map.js"></script>
+    <script src="http://code.highcharts.com/maps/modules/data.js"></script>
+    <script src="http://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="http://code.highcharts.com/mapdata/custom/world.js"></script>
+    
+    
+
+
+    <!-- Flag sprites service provided by Martijn Lafeber, https://github.com/lafeber/world-flags-sprite/blob/master/LICENSE -->
+    <link rel="stylesheet" type="text/css" href="http://cloud.github.com/downloads/lafeber/world-flags-sprite/flags32.css" />
+
+    <!-- Twitter Bootstrap Components -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans|Lato:300,400,300italic,400italic|Lora|Philosopher|Lobster|Droid+Serif|Playball|VT323' rel='stylesheet' type='text/css'>
+
+    
+    <script type="text/javascript" src="installs_worldmap.js"></script>
+    <script type="text/javascript" src="installs_pie.js"></script>
+    <script type="text/javascript" src="installs_pie_country.js"></script>
+    
+    <script type="text/javascript" src="tut_vs_ret.js"></script>
+    <script type="text/javascript" src="tutorial_rate_browsers.js"></script>
+    <script type="text/javascript" src="retention_rate_browsers.js"></script>
+    <script type="text/javascript" src="retention_rate_worldmap.js"></script>
+
+    <script type="text/javascript" src="retention_rate_trends.js"></script>
+    <script type="text/javascript" src="retentions_dow.js"></script>
+    <script type="text/javascript" src="retentions_dow_browsers.js"></script>
+
+    
+
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+
+<body>
+    <section>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">
+              <img src="http://pbs.twimg.com/profile_images/3605022640/8770e989ab11d32c0fc74bf5fdabb031.jpeg" height="25" width="25"/>
+              Dashboard</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="#browsers">Browsers</a></li>
+                <li><a href="#trends">Trends</a></li>
+                <li><a href="#metrics">Metrics</a></li>
+              </ul>
+              
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Log In <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Gmail Login</a></li>
+                    <li><a href="#">Facebook Login</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Sign Up</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+    </section>
+
+    <div id="locations">
+        <h1>70% installs from US</h1>
+        <div id="installs_worldmap"></div>
+        <div id="installs_pie_country"></div>
+        <hr>
+        <h1>Japan has <em>highest</em> retention rate, US <em>lowest</em></h1>
+        <div id="retention_rate_worldmap"></div>
+
+    </div>
+    <hr><div class="bottom_page"><p class="text-muted pull-right" style="font-size: 16px"><a href="#locations">Back to top</a></p></div>
+
+
+    <div id="browsers">
+        <h1>Half the installs on IE <br> <small style="color: #E8705B"><em>Not your typical gamers...?</em></small></h1>
+        <div id="installs_pie"></div>
+        <hr>
+        <h1>Chrome fails HARD at 1-day retention <br> <small style="color: #E8705B">while tutorial completion similar across browsers</small></h1>
+        <div id="tutorial_rate_browsers"></div>
+        <div id="retention_rate_browsers"></div>
+    </div>   
+    <hr><div class="bottom_page"><p class="text-muted pull-right" style="font-size: 16px"><a href="#browsers">Back to top</a></p></div>
+    
+
+    <div id="trends">
+        <h1>Retention Rate(RR) steadily improves over time </h1>
+        <div id="retention_rate_trends"></div>
+        <hr>
+        <h1>Wednesdays are Champions!<br> <small style="color: #E8705B"><em>...and it is consistent across browsers</em></small></h1>
+        <div id="retentions_dow"></div>
+        <div id="retentions_dow_browsers"></div>
+    </div>
+    <hr><div class="bottom_page"><p class="text-muted pull-right" style="font-size: 16px"><a href="#trends">Back to top</a></p></div>
+
+    <div id="metrics">
+        <h1>Tutorial completention and 1-day retention go hand in hand <br><small style="color: #E8705B"><em> 70% gamers are predictable this way</em></small></h1>
+        <div id="tut_vs_ret"></div>
+    </div><div class="bottom_page"><p class="text-muted pull-right" style="font-size: 16px"><a href="#metrics">Back to top</a></p></div>
+
+    <div class="footer">
+      <div class="container">
+        <p class="text-muted pull-right" style="font-size: 16px"><a href="#">Back to top</a></p>
+        <p class="text-muted" style="font-size: 16px">&copy; 2014 &middot; Lingqiang Kong </p>
+
+      </div>
+    </div>
+
+</body>
+</html>
