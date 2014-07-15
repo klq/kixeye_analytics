@@ -5,7 +5,7 @@ $(function install_trends() {
                 width: 700
             },
             title: {
-                text: 'Cumulated Total Installs'
+                text: 'Cumulated Installs'
             },
             subtitle:{
                 text: ' 2013/1/9 - 2013/2/27 '
